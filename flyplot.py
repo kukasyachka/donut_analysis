@@ -1,4 +1,4 @@
-import pickle
+#import pickle
 
 from matplotlib import pyplot as plt
 import numpy as np
@@ -445,6 +445,7 @@ def generate_cm_arena(arena, cm_radius):
 
 
 def load_arena_pickle(fname):
+    import pickle
     with open(fname, 'rb') as f:
         arena = pickle.load(f)
         return arena
